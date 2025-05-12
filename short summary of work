@@ -1,0 +1,17 @@
+File Import: Loaded the dataset from Customers.csv into a DataFrame.
+
+Null Check: Checked for missing values in the dataset using df.info() and df.isna().sum().
+
+Column Cleanup:
+
+Converted the dataset to a DataFrame (redundant if already in that format).
+
+Dropped the unnecessary "Profession" column.
+
+Feature Engineering: Added a new column "Age Group" by categorizing the "Age" column into bins (e.g., 'Under 18', '18-24', etc.).
+
+Missing Values Handling: Removed rows with missing values in the "Season" column.
+
+Duplicates Handling: Removed duplicate entries based on the "CustomerID" column.
+
+Final Review: Performed a descriptive statistical summary using df.describe().
